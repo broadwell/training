@@ -626,12 +626,12 @@
                                 
                                 <h2 id="create-your-own-manifest">Create your own manifest</h2>
 <h3 id="manually-build-a-manifest-in-a-json-editor-method-1">Manually build a manifest in a JSON Editor (Method 1)</h3>
-<p>Now that we have a template manifest and understand a bit better how it fits together, let&apos;s manually make our own manifest with images from the local image server we set up yesterday.</p>
+<p>Now that we have a sample manifest and understand a bit better how it fits together, let&apos;s manually make our own manifest with images from the local image server we set up yesterday.</p>
 <ul>
 <li>Hint: an important change will be modifying the &quot;@id&quot; of the service object associated with the image resource.
-The value of the &quot;@id&quot; should be the path of the image on your image service, without any specific IIIF URL parameters.
-Use the manifest we just worked on together as a template.</li>
+The value of the &quot;@id&quot; should be the path of the image on your image service, without any specific IIIF URL parameters.</li>
 </ul>
+<p><em>Short activity:</em> Using the manifest we just worked on together as a template (and the examples in the Presentation API specification for reference) try to work out which elements you should edit to replace the dummy images from the template with actual images available via the image service we set up yesterday.</p>
 <h3 id="building-a-manifest-with-a-gui-method-2">Building a manifest with a GUI (Method 2)</h3>
 <p>For this task, we&apos;ll use the very handy <a href="https://github.com/bodleian/iiif-manifest-editor" target="_blank">Bodleian Manifest Editor</a>, part of the <a href="http://dmt.bodleian.ox.ac.uk" target="_blank">Digital Manuscripts Toolkit</a> developed by Text and Bytes for the Bodleian Library at the Unviersity of Oxford. It is a lightweight, web-based tool to manipulate existing IIIF manifests and create new ones without needing to edit the JSON-LD directly.</p>
 <p>To begin, navigate to:</p>
@@ -647,8 +647,9 @@ Use the manifest we just worked on together as a template.</li>
 <li><p>Click &quot;Add Canvas&quot; and then click on the empty canvas that appears.</p>
 <p> <img src="../images/add_canvas.png" alt="add canvas"></p>
 </li>
-<li><p>Now we need to add an image to this canvas. Click &quot;Add Image to Canvas.&quot;</p>
+<li><p>Now we need to add an image to this canvas. Click on the &quot;Canvas Metadata&quot; accordion panel on the right.</p>
 </li>
+<li>Click &quot;Add Image to Canvas.&quot;</li>
 <li><p>We want to use an image we are already hosting, so we select the &quot;From info.json URI&quot; option, and input our info.json URI from our local IIIF server. Then click &quot;Submit URI.&quot;</p>
 <p> <code>http://127.0.0.1:8182/iiif/2/eddie.jpg/info.json</code></p>
 <p> <img src="../images/info_json_uri.png" alt="info json uri"></p>
@@ -659,7 +660,7 @@ Use the manifest we just worked on together as a template.</li>
 <p>Great job! You now have created and downloaded a IIIF Presentation API manifest.</p>
 </li>
 </ol>
-<div class="git-author-container git-author-bottom"><div class="modified">Last modified by Peter Broadwell 2019-05-31 21:44:54</div><div class="created">Created by Peter Broadwell 2019-05-31 21:44:54</div></div>
+<div class="git-author-container git-author-bottom"><div class="modified">Last modified by Peter Broadwell 2019-06-01 11:40:23</div><div class="created">Created by Peter Broadwell 2019-05-31 21:44:54</div></div>
                                 
                                 </section>
                             
@@ -702,7 +703,7 @@ Use the manifest we just worked on together as a template.</li>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Building an Individual Manifest","level":"3.2.3","depth":2,"next":{"title":"Serving Your Manifest","level":"3.2.4","depth":2,"path":"day-two/4-serving-your-manifest.md","ref":"day-two/4-serving-your-manifest.md","articles":[]},"previous":{"title":"Building a Group Manifest","level":"3.2.2","depth":2,"path":"day-two/2-activity-group-manifest.md","ref":"day-two/2-activity-group-manifest.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include","theme-default","toggle-chapters","git-author","-highlight","sunlight-highlighter","toggle-chapters"],"styles":{},"pluginsConfig":{"git-author":{"position":"bottom","modifyTpl":"Last modified by {user} {timeStamp}","createTpl":"Created by {user} {timeStamp}","timeStampFormat":"YYYY-MM-DD HH:mm:ss"},"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":true,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"sunlight-highlighter":{"lineNumbers":false,"theme":"gitbook"},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"IIIF 5 Day Workshop","gitbook":"3.2.3"},"file":{"path":"day-two/3-activity-create-your-own-manifest.md","mtime":"2019-06-01T04:46:48.670Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-01T04:49:00.790Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Building an Individual Manifest","level":"3.2.3","depth":2,"next":{"title":"Serving Your Manifest","level":"3.2.4","depth":2,"path":"day-two/4-serving-your-manifest.md","ref":"day-two/4-serving-your-manifest.md","articles":[]},"previous":{"title":"Building a Group Manifest","level":"3.2.2","depth":2,"path":"day-two/2-activity-group-manifest.md","ref":"day-two/2-activity-group-manifest.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include","theme-default","toggle-chapters","git-author","-highlight","sunlight-highlighter","toggle-chapters"],"styles":{},"pluginsConfig":{"git-author":{"position":"bottom","modifyTpl":"Last modified by {user} {timeStamp}","createTpl":"Created by {user} {timeStamp}","timeStampFormat":"YYYY-MM-DD HH:mm:ss"},"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":true,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"sunlight-highlighter":{"lineNumbers":false,"theme":"gitbook"},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"IIIF 5 Day Workshop","gitbook":"3.2.3"},"file":{"path":"day-two/3-activity-create-your-own-manifest.md","mtime":"2019-06-01T18:56:30.254Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-01T18:57:26.444Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
