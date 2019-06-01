@@ -624,14 +624,14 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="activity-building-an-example-group-manifest">Activity: Building an Example Group Manifest</h2>
-<p>So usually all of this goes in one ear and out the other until we start building a manifest.</p>
-<p>While in production, manifests can get very big and are usually machine generated there is no substitute for making one by hand.</p>
+                                <h2 id="activity-buildingmodifying-a-sample-manifest">Activity: Building/modifying a sample manifest</h2>
+<p>The concepts of the Presentataion API can be quite difficult to grasp until we actually start building a manifest.</p>
+<p>Learning by doing: In production systems (e.g., digital library image collections), manifests can get very big and are usually machine generated, but for getting the basic concepts down, there is no substitute for making a manifest &quot;by hand.&quot;</p>
 <p>First, we&apos;re going to do this together.</p>
-<p>Then, we&apos;ll send you off to make your own.</p>
+<p>Then, we&apos;ll send you off to make your own manifest (with some computational assistance).</p>
 <h3 id="group-manifest">Group Manifest</h3>
 <ul>
-<li>Here I&apos;ve created a bare minimum manifest for us all to share. But you&apos;ll notice, it is very sparse.</li>
+<li>Here I&apos;ve created a basic manifest for all of us to share. As you&apos;ll notice, it is very sparse.</li>
 </ul>
 <pre><code class="lang-json"><div class="sunlight-container sunlight-theme-gitbook"><div class="sunlight-code-container"><pre class="sunlight-highlight-json sunlight-highlighted"><span class="sunlight-plaintext">
 {
@@ -675,23 +675,23 @@
 &#xA0;&#xA0;]
 }
 </span></pre></div></div></code></pre>
-<p>There really is no substitute for reading the documentations and learning to read them is empowering.</p>
-<p>Therefore, in this activity, we want you with a partner to look <a href="http://iiif.io/api/presentation/2.1/" target="_blank">IIIF documentation</a> and hunt for an answers to the following questions.</p>
-<p>When you think you&apos;ve found the answer, add it to your version of the manifest.</p>
-<p>Then we&apos;re done we will go through the completed manifests together and compare answers.</p>
+<p>There&apos;s also no substitute for reading the documentation behind a specification like this and actually using it to build something -- it can be quite empowering!</p>
+<p>Therefore, in this activity, we want you with a partner to look at the <a href="http://iiif.io/api/presentation/2.1/" target="_blank">IIIF Presentation API documentation</a> and hunt for an answers to the following questions.</p>
+<p>When you think you&apos;ve found the answer, add it to the manifest above -- you&apos;ll need to copy and paste it into a text editor or, better yet, a JSON editor (these aren&apos;t hard to find).</p>
+<p>When we&apos;re done, we&apos;ll go through the completed manifests together and compare answers.</p>
 <ol>
-<li>Give the manifest resource the following title &quot;A custom manifest for IIIF Practice&quot;.</li>
-<li>Provide a short description of this manifest.</li>
-<li>Indicate that manifest resource has a creative commons 4.0 by-nc-sa license.</li>
-<li>Tell the image viewer that this resource should be explicitly viewed going from left to right.</li>
+<li>Give the manifest resource the following title: &quot;A custom manifest for IIIF practice&quot;.</li>
+<li>Provide a short description of this manifest -- the content is up to you.</li>
+<li>Indicate that manifest resource has a Creative Commons 4.0 by-nc-sa license.</li>
+<li>Tell the image viewer that this resource should be viewed from left to right.</li>
 <li>Create a second canvas, with appropriate ids.</li>
-<li>Indicate that the image for this second canvas has two facing pages and therefore when a viewer shows it in book view, it should not combine this with an image before or after.</li>
-<li>Give canvas 1 a title &quot;canvas number 1&quot;.</li>
-<li>Give canvas 2 a title &quot;canvas number 2&quot;.</li>
-<li>Add a second image to canvas 1 with a different image format &quot;image/png&quot;.</li>
-<li>Give this second image a title called &quot;alternative image for canvas 1&quot;.</li>
+<li>Indicate that the image for this second canvas has two facing pages and therefore when a viewer shows it in book view, it should not combine the image with an image before or after it.</li>
+<li>Give canvas 1 a title: &quot;canvas number 1&quot;.</li>
+<li>Give canvas 2 a title: &quot;canvas number 2&quot;.</li>
+<li>Add a second image to canvas 1 with a different image format, specifically &quot;image/png&quot;.</li>
+<li>Give this second image a title: &quot;alternative image for canvas 1&quot;.</li>
 </ol>
-<div class="git-author-container git-author-bottom"><div class="modified">Last modified by Jeffrey C. Witt 2018-06-05 07:07:05</div><div class="created">Created by Jeffrey C. Witt 2018-06-05 07:07:05</div></div>
+<div class="git-author-container git-author-bottom"><div class="modified">Last modified by Peter Broadwell 2019-05-31 16:45:26</div><div class="created">Created by Jeffrey C. Witt 2018-06-05 07:07:05</div></div>
                                 
                                 </section>
                             
@@ -734,7 +734,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Building a Group Manifest","level":"3.3.2","depth":2,"next":{"title":"Building an Individual Manifest","level":"3.3.3","depth":2,"path":"day-two/7-activity-create-your-own-manifest.md","ref":"day-two/7-activity-create-your-own-manifest.md","articles":[]},"previous":{"title":"Anatomy of a Basic Manifest","level":"3.3.1","depth":2,"path":"day-two/5-anatomy-of-a-basic-manifest.md","ref":"day-two/5-anatomy-of-a-basic-manifest.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include","theme-default","toggle-chapters","git-author","-highlight","sunlight-highlighter","toggle-chapters"],"styles":{},"pluginsConfig":{"git-author":{"position":"bottom","modifyTpl":"Last modified by {user} {timeStamp}","createTpl":"Created by {user} {timeStamp}","timeStampFormat":"YYYY-MM-DD HH:mm:ss"},"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":true,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"sunlight-highlighter":{"lineNumbers":false,"theme":"gitbook"},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"IIIF 5 Day Workshop","gitbook":"3.2.3"},"file":{"path":"day-two/6-activity-group-manifest.md","mtime":"2019-06-01T04:00:05.937Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-01T04:02:39.199Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Building a Group Manifest","level":"3.3.2","depth":2,"next":{"title":"Building an Individual Manifest","level":"3.3.3","depth":2,"path":"day-two/7-activity-create-your-own-manifest.md","ref":"day-two/7-activity-create-your-own-manifest.md","articles":[]},"previous":{"title":"Anatomy of a Basic Manifest","level":"3.3.1","depth":2,"path":"day-two/5-anatomy-of-a-basic-manifest.md","ref":"day-two/5-anatomy-of-a-basic-manifest.md","articles":[]},"dir":"ltr"},"config":{"plugins":["include","theme-default","toggle-chapters","git-author","-highlight","sunlight-highlighter","toggle-chapters"],"styles":{},"pluginsConfig":{"git-author":{"position":"bottom","modifyTpl":"Last modified by {user} {timeStamp}","createTpl":"Created by {user} {timeStamp}","timeStampFormat":"YYYY-MM-DD HH:mm:ss"},"include":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"showLevel":true,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"sunlight-highlighter":{"lineNumbers":false,"theme":"gitbook"},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"IIIF 5 Day Workshop","gitbook":"3.2.3"},"file":{"path":"day-two/6-activity-group-manifest.md","mtime":"2019-06-01T04:08:27.696Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-01T04:08:53.446Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
